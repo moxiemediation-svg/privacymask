@@ -9,7 +9,7 @@ Privacy Mask is a Chrome extension that masks sensitive data entirely in your br
 ## Installation Instructions
 
 ### Step 1: Download the Extension
-[Download privacy-mask-extension.zip](#) ← *Replace with your actual download link*
+https://github.com/moxiemediation-svg/privacymask.git ← *Replace with your actual download link*
 
 ### Step 2: Extract the ZIP File
 - **Windows:** Right-click → "Extract All"
@@ -307,7 +307,7 @@ A: You can export and share the mapping file, but they'll need the extension ins
 ## Support
 
 **Issues or Questions?**  
-Email: [your email]
+Email: lindsey@wagnerlegalpc.com
 
 **Want to Improve It?**  
 The code is open source. Feel free to modify and enhance it.
@@ -320,7 +320,7 @@ Let me know what happened and I'll work on a fix.
 ## Version Information
 
 **Current Version:** 1.0.0  
-**Last Updated:** November 2024  
+**Last Updated:** November 2025
 **Works With:** Chrome (and Chromium-based browsers)
 
 ---
