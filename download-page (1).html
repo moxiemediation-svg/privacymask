@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Mask - Client-Side Data Masking for AI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            margin-bottom: 16px;
+            color: #667eea;
+        }
+        
+        .tagline {
+            font-size: 20px;
+            color: #6b7280;
+        }
+        
+        .hero {
+            text-align: center;
+            font-size: 18px;
+            color: #374151;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 30px;
+            background: #f9fafb;
+            border-radius: 12px;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.2s;
+            margin: 10px;
+        }
+        
+        .download-btn:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+        }
+        
+        .secondary-btn {
+            background: #6b7280;
+        }
+        
+        .secondary-btn:hover {
+            background: #4b5563;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+        
+        .how-it-works {
+            margin: 40px 0;
+        }
+        
+        .step {
+            display: flex;
+            align-items: start;
+            margin: 20px 0;
+            padding: 20px;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+        
+        .step-number {
+            background: #667eea;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+        
+        .use-cases {
+            background: #ecfdf5;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 40px 0;
+        }
+        
+        .use-cases h2 {
+            color: #047857;
+            margin-bottom: 20px;
+        }
+        
+        .use-case {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 2px solid #e5e7eb;
+            color: #6b7280;
+        }
+        
+        .warning {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        
+        code {
+            background: #f3f4f6;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔒 Privacy Mask</h1>
+            <p class="tagline">Use AI without exposing sensitive data</p>
+        </header>
+
+        <div class="hero">
+            <p><strong>Stop compromising compliance to use AI.</strong></p>
+            <p>Privacy Mask lets you mask sensitive data entirely in your browser—no servers, no cloud processing, no data exposure. Use ChatGPT and Claude safely with client names, employee info, health data, and more.</p>
+        </div>
+
+        <div class="cta-section">
+            <a href="privacy-mask-extension.zip" class="download-btn">📥 Download Extension</a>
+            <a href="USER_INSTRUCTIONS.md" class="download-btn secondary-btn">📖 Full Instructions</a>
+            <p style="margin-top: 20px; color: #6b7280;">Free • No account required • No tracking</p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>✅ 100% Client-Side</h3>
+                <p>All masking happens in your browser. Your sensitive data never touches any server.</p>
+            </div>
+            <div class="feature">
+                <h3>🎯 Smart Detection</h3>
+                <p>Automatically finds emails, phones, SSNs, credit cards, amounts, dates, and addresses.</p>
+            </div>
+            <div class="feature">
+                <h3>⚡ Instant Masking</h3>
+                <p>Select text, right-click, mask. Takes 2 seconds. No manual find-and-replace needed.</p>
+            </div>
+            <div class="feature">
+                <h3>🔄 Easy Unmask</h3>
+                <p>Get your AI response, unmask it with one click, use the result with real names restored.</p>
+            </div>
+        </div>
+
+        <div class="how-it-works">
+            <h2>How It Works</h2>
+            
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>
+                    <strong>Select text with sensitive data</strong>
+                    <p>On any webpage: email, document, wherever</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>
+                    <strong>Right-click → "Copy with masking"</strong>
+                    <p>Masked version copies to your clipboard</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>
+                    <strong>Paste into ChatGPT or Claude</strong>
+                    <p>They see tokens like <code>[NAME_1]</code> and <code>[EMAIL_1]</code></p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div>
+                    <strong>Get AI response, then unmask</strong>
+                    <p>Select response → Right-click → "Unmask data"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="use-cases">
+            <h2>Who This Is For</h2>
+            <div class="use-case">
+                <strong>⚖️ Legal Professionals:</strong> Use AI for research and drafting without exposing client information or violating attorney-client privilege
+            </div>
+            <div class="use-case">
+                <strong>👥 HR Teams:</strong> Get AI help with policies and employee matters while protecting PII
+            </div>
+            <div class="use-case">
+                <strong>🏥 Healthcare Providers:</strong> Use AI for documentation and analysis without PHI exposure
+            </div>
+            <div class="use-case">
+                <strong>💼 Small Businesses:</strong> Get enterprise-level privacy protection without the enterprise budget
+            </div>
+        </div>
+
+        <div class="warning">
+            <h3>⚠️ Important Limitations</h3>
+            <p><strong>This is not magic.</strong> Always review masked text before sharing. Name detection is imperfect. Context can reveal identity. This tool is one layer of protection—not a replacement for proper compliance policies.</p>
+            <p style="margin-top: 10px;"><strong>Use responsibly:</strong> Combine with appropriate AI tools (no free tiers for client data), export your mappings regularly, and follow your organization's data policies.</p>
+        </div>
+
+        <div style="margin: 40px 0;">
+            <h2>What Gets Masked</h2>
+            <p style="margin: 15px 0;">By default, Privacy Mask detects and masks:</p>
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li>✅ Email addresses → <code>[EMAIL_1]</code></li>
+                <li>✅ Phone numbers → <code>[PHONE_1]</code></li>
+                <li>✅ Social Security Numbers → <code>[SSN_1]</code></li>
+                <li>✅ Credit card numbers → <code>[CARD_1]</code></li>
+                <li>✅ Dollar amounts → <code>[AMOUNT_1]</code></li>
+                <li>✅ Dates → <code>[DATE_1]</code></li>
+                <li>✅ Street addresses → <code>[ADDRESS_1]</code></li>
+                <li>⚠️ Names (optional - off by default)</li>
+            </ul>
+        </div>
+
+        <div style="margin: 40px 0; text-align: center;">
+            <h2>Ready to Start?</h2>
+            <p style="margin: 20px 0;">Download takes 10 seconds. Installation takes 30 seconds. Using it saves you hours.</p>
+            <a href="privacy-mask-extension.zip" class="download-btn">📥 Download Privacy Mask</a>
+        </div>
+
+        <footer>
+            <p><strong>Privacy Mask</strong> is provided free by The AI Shift LLC</p>
+            <p style="margin-top: 10px;">Built for legal, HR, and healthcare professionals who want to use AI safely.</p>
+            <p style="margin-top: 20px;">Questions? Reply to the newsletter or contact us.</p>
+        </footer>
+    </div>
+</body>
+</html>
